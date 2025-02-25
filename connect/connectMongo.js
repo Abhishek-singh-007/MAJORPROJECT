@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
-const MONGO_URL =
-  "mongodb+srv://abhishekmani1008:qOswmXmvB7eXX92G@onyourhome.frizz.mongodb.net/onYourHome?retryWrites=true&w=majority";
+// const MONGO_URL =
+//   "mongodb+srv://abhishekmani1008:qOswmXmvB7eXX92G@onyourhome.frizz.mongodb.net/onYourHome?retryWrites=true&w=majority";
+const MONGO_URL = process.env.MongoDBUrl; // Use the .env variable
 
 const connectDB = async () => {
   try {
